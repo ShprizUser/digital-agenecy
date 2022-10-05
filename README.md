@@ -16,5 +16,5 @@ Modern digital agency website
            margin-left: auto;
            margin-right: auto;
            width: 30%;"
-    src="screenshot.pdf" 
+    src="incore.jpg" 
 </img>
