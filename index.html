@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/libs/AOS/aos.css" />
+		<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/img/favicon/favicon.png" rel="icon" type="image/png" />
+		<link
+			href="assets/img/favicon/favicon.svg"
+			rel="icon"
+			type="image/svg+xml"
+		/>
+		<link rel="yandex-tableau-widget" href="/manifest.json" />
+		<link
+			href="assets/img/favicon/apple-touch-icon.png"
+			rel="apple-touch-icon"
+		/>
+		<title>Incore - digital agancy</title>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				for (var j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r) {
+						return;
+					}
+				}
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(
+				window,
+				document,
+				"script",
+				"https://mc.yandex.ru/metrika/tag.js",
+				"ym"
+			);
+
+			ym(90488014, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/90488014"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<div id="butter">
+			<section id="hero">
+				<header id="header">
+					<div class="container-fluid">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="logo-lg logo-animation">
+								<a class="text-stroke" href="/index.html">Incore</a>
+							</div>
+							<button class="nav-toggle">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</button>
+							<nav id="navbar-menu" class="navbar d-flex align-items-center">
+								<ul>
+									<li><a href="/index.html">Главная</a></li>
+									<li><a href="/aboutus.html">О нас</a></li>
+									<li><a href="/uslugi.html">Услуги</a></li>
+									<!-- <li><a href="/cases.html">Кейсы</a></li> -->
+									<li><a class="scrollto" href="#footer">Контакты</a></li>
+									<li>
+										<button class="form-toggle btn btn-main">
+											Заказать проект
+										</button>
+									</li>
+								</ul>
+							</nav>
+							<nav
+								id="navbar-form"
+								class="navbar d-flex align-items-center justify-content-center"
+							>
+								<form
+									id="form"
+									enctype="multipart/form-data"
+									method="post"
+									class="php-email-form"
+									onsubmit="send(event, 'send.php')"
+								>
+									<div class="mb-5"><h3>Заказать проект</h3></div>
+									<div class="mb-5">
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											placeholder="Ваше Имя"
+											required
+										/>
+									</div>
+									<div class="mb-5">
+										<input
+											type="phone"
+											class="tel form-control"
+											name="phone"
+											placeholder="Ваш телефон"
+											required
+											pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+										/>
+									</div>
+									<div class="mb-5">
+										<textarea
+											type="text"
+											class="form-control"
+											name="msg"
+											rows="3"
+											placeholder="Пару слов о проекте"
+										></textarea>
+									</div>
+									<div class="my-3">
+										<div class="loading">Загрузка</div>
+										<div class="error-message"></div>
+										<div class="sent-message">
+											Спасибо, ваша заявка отправлена!
+										</div>
+									</div>
+									<button type="submit" class="btn btn-main">
+										Отправить заявку
+									</button>
+								</form>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+				<div
+					class="container-fluid h-80 d-flex align-items-center justify-content-around"
+				>
+					<div class="row">
+						<div
+							class="d-none col-lg-5 d-md-flex align-items-end justify-content-center"
+						>
+							<div class="hero-left d-flex align-items-center">
+								“независимое агенство, которое создает сильные и провокационные
+								отношения между компаниями и их клиентами”
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="moon-inner d-flex">
+								<div class="moon-textmoon d-grid align-content-between">
+									<div class="moon-texttop">
+										digital<br />agency <span class="moon-texttop__line"></span>
+									</div>
+
+									<div class="moon-textbottom">
+										маркетинговые и digital решения для вашего бизнеса
+										<span class="moon-textbottom__line"></span>
+									</div>
+								</div>
+								<div class="moon-inner__img d-flex align-items-center">
+									<img src="assets/img/moon.png" alt="moon" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="brands">
+				<div class="container">
+					<div class="row brands-item brands-item-1">
+						<div class="col-6 brands-item__video">
+							<video
+								class="_autoplay_vid"
+								playsinline=""
+								loop=""
+								muted=""
+								preload="metadata"
+							>
+								<source src="assets/video/MP4/axe.mp4" type="video/mp4" />
+								<source src="assets/video/webm/axe.webm" type="video/webm" />
+							</video>
+						</div>
+						<div
+							class="col-6 d-flex align-items-center justify-content-center"
+							data-aos="fade-left"
+							data-aos-offset="300"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-sine"
+						>
+							<h2>Access</h2>
+						</div>
+					</div>
+					<div class="row brands-item brands-item-2">
+						<div
+							class="col-6 d-flex align-items-center justify-content-center"
+							data-aos="fade-right"
+							data-aos-offset="300"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-sine"
+						>
+							<h2>NIKE</h2>
+						</div>
+						<div class="col-6 brands-item__video">
+							<video
+								class="_autoplay_vid"
+								playsinline=""
+								loop=""
+								muted=""
+								preload="metadata"
+							>
+								<source src="assets/video/MP4/oculus.mp4" type="video/mp4" />
+								<source src="assets/video/webm/oculus.webm" type="video/webm" />
+							</video>
+						</div>
+					</div>
+					<div class="row brands-item brands-item-3">
+						<div class="col-6 brands-item__video">
+							<video
+								class="_autoplay_vid"
+								playsinline=""
+								loop=""
+								muted=""
+								preload="metadata"
+							>
+								<source src="assets/video/MP4/porshe.mp4" type="video/mp4" />
+								<source src="assets/video/webm/porshe.webm" type="video/webm" />
+							</video>
+						</div>
+						<div
+							class="col-6 d-flex align-items-center justify-content-center"
+							data-aos="fade-left"
+							data-aos-offset="300"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-sine"
+						>
+							<h2>Porsche</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="aboutus">
+				<div class="container-fluid">
+					<div class="aboutus__wrapper">
+						<div class="running-line running-line__toright">
+							<div class="place">
+								<div class="block">
+									<h1 class="text-stroke">
+										О НАС - DIGITAL-AGENCY - INCORE - ABOUT US -&#160;
+									</h1>
+								</div>
+							</div>
+							<div class="place">
+								<div class="block">
+									<h1 class="text-stroke">
+										О НАС - DIGITAL-AGENCY - INCORE - ABOUT US -&#160;
+									</h1>
+								</div>
+							</div>
+							<div class="place">
+								<div class="block">
+									<h1 class="text-stroke">
+										О НАС - DIGITAL-AGENCY - INCORE - ABOUT US -&#160;
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row abouts__inner">
+						<div
+							class="col-md-6"
+							data-aos="fade-right"
+							data-aos-offset="300"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-sine"
+						>
+							<p>
+								Incore - независимое агенство, мы создаёт сильные и
+								провокационные отношения между компаниями и их клиентами.
+							</p>
+							<p>
+								Наша цель - создавать целенаправленную работу, которая работает
+								на вашу аудиторию и ваш бизнес.
+							</p>
+
+							<p>
+								Мы создали не просто агенство, мы создали нечто большое, здесь
+								царит креативность, эстетика и индивидуальный подход к каждому
+								проекту. Мы уверены, что каждый приходящий сюда за реализацией
+								маркетинговых и digital целей захочет остаться с нами -
+								НАВСЕГДА.
+							</p>
+						</div>
+						<div
+							class="col-md-6 d-flex align-items-center justify-content-center"
+							data-aos="fade-left"
+							data-aos-offset="300"
+							data-aos-duration="1000"
+							data-aos-easing="ease-in-sine"
+						>
+							<div class="logo-sm"><h1>Incore</h1></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="stacks">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="swiper stacks">
+							<div class="swiper-wrapper">
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-1.JPG)"
+								>
+									<h3>Контекстная реклама</h3>
+									<h4>Реклама вашего сайта на поисковых площадках</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-2.JPG)"
+								>
+									<h3>SEO - продвижение</h3>
+									<h4>
+										Органическое продвижение вашего сайта на поисковых площадках
+									</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-3.JPG)"
+								>
+									<h3>Таргетированная реклама</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-4.JPG)"
+								>
+									<h3>Разработка фирменного стиля компании</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-5.JPG)"
+								>
+									<h3>Разработка дизайна сайта</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-6.JPG)"
+								>
+									<h3>Разработка дизайна мобильного приложения</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-7.JPG)"
+								>
+									<h3>Разработка сайта</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+								<div
+									class="swiper-slide"
+									style="background-image: url(/assets/img/uslugi/uslugi-8.JPG)"
+								>
+									<h3>Разработка мобильного приложения</h3>
+									<h4>Продвижение вашего аккаунта в социальных сетях</h4>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="clients">
+				<div class="container">
+					<div class="row">
+						<h1>Наши & Клиенты</h1>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="clients__inner">
+						<div class="running-line running-line__toright">
+							<div class="place">
+								<div class="block">
+									<h1>Carlo Pazolini - STRADA - Medic -&#160;</h1>
+								</div>
+							</div>
+							<div class="place">
+								<div class="block">
+									<h1>Carlo Pazolini - STRADA - Medic -&#160;</h1>
+								</div>
+							</div>
+							<div class="place">
+								<div class="block">
+									<h1>Carlo Pazolini - STRADA - Medic -&#160;</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-logo text-stroke">
+								<span>I</span><span>n</span><span>c</span><span>o</span
+								><span>r</span><span>e</span>
+							</div>
+							<div class="footer-logo__desc">
+								digital-agency для ваших бизнес целей
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footer-social">
+								<ul>
+									<li>
+										<a class="invert" href="https://vk.com/incore_agency">VK</a>
+									</li>
+									<li><a class="invert" href="">Whats app</a></li>
+									<li>
+										<a class="invert" href="https://tlgg.ru/@incore_digital"
+											>Telegram</a
+										>
+									</li>
+									<li>
+										<a href="/brief.html" class="btn btn-main invert"
+											>Оставить заявку</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="footer-contacts">
+								<ul>
+									<li>
+										<a class="invert" href="mailto:production@incoreagency.ru"
+											>production@incoreagency.ru</a
+										>
+									</li>
+									<li>
+										Телефон: <a class="invert" href="">8-900-900-00-01</a>
+									</li>
+									<li>Russia, Moscow</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="copyright d-flex justify-content-between">
+							<div>2022, THE INCORE DIGITAL AGENCY - Все права защищены</div>
+							<div>
+								<a class="invert" target="_blank" href="/privacy.html"
+									>Конфиденциальность — Условия</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div id="preloader"></div>
+		</div>
+	</body>
+	<script src="assets/libs/butter/butter.js"></script>
+	<script src="assets/libs/AOS/aos.js"></script>
+	<script src="assets/libs/cursor/window.curDot.min.js"></script>
+	<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		var swiper = new Swiper(".stacks", {
+			effect: "coverflow",
+			grabCursor: true,
+			spaceBetween: 30,
+			loop: true,
+			autoplay: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 30,
+				stretch: 30,
+				depth: 200,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+		});
+	</script>
+</html>

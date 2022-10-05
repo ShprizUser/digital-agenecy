@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"api_version": 1,
+	"layout": {
+		"logo": "https://incoreagency.ru/assets/image/favicon/yandex_widget.png",
+		"color": "#000",
+		"show_title": true
+	}
+}

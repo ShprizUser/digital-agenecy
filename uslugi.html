@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/libs/AOS/aos.css" />
+		<link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/uslugi.css" />
+		<title>Incore - digital agancy</title>
+		<link href="assets/img/favicon/favicon.png" rel="icon" type="image/png" />
+		<link rel="yandex-tableau-widget" href="/manifest.json" />
+		<link
+			href="assets/img/favicon/apple-touch-icon.png"
+			rel="apple-touch-icon"
+		/>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				for (var j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r) {
+						return;
+					}
+				}
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(
+				window,
+				document,
+				"script",
+				"https://mc.yandex.ru/metrika/tag.js",
+				"ym"
+			);
+
+			ym(90488014, "init", {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src="https://mc.yandex.ru/watch/90488014"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/></div
+		></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<div id="butter">
+			<section id="hero">
+				<header id="header">
+					<div class="container-fluid">
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="logo-lg">
+								<a class="text-stroke" href="/index.html">Incore</a>
+							</div>
+							<button class="nav-toggle">
+								<span class="line"></span>
+								<span class="line"></span>
+								<span class="line"></span>
+							</button>
+							<nav id="navbar-menu" class="navbar d-flex align-items-center">
+								<ul>
+									<li><a href="/index.html">Главная</a></li>
+									<li><a href="/aboutus.html">О нас</a></li>
+									<li><a href="/uslugi.html">Услуги</a></li>
+									<!-- <li><a href="/cases.html">Кейсы</a></li> -->
+									<li><a class="scrollto" href="#footer">Контакты</a></li>
+									<li>
+										<button class="form-toggle btn btn-main">
+											Заказать проект
+										</button>
+									</li>
+								</ul>
+							</nav>
+							<nav
+								id="navbar-form"
+								class="navbar d-flex align-items-center justify-content-center"
+							>
+								<form
+									id="form"
+									action="forms/contact.php"
+									method="post"
+									role="form"
+									class="php-email-form"
+								>
+									<div class="mb-5"><h3>Заказать проект</h3></div>
+									<div class="mb-5">
+										<input
+											type="name"
+											class="form-control"
+											placeholder="Ваше Имя"
+											required
+										/>
+									</div>
+									<div class="mb-5">
+										<input
+											type="phone"
+											class="tel form-control"
+											name="phone"
+											placeholder="Ваш телефон"
+											required
+											pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+										/>
+									</div>
+									<div class="mb-5">
+										<textarea
+											type="text"
+											class="form-control"
+											name="text"
+											rows="3"
+											placeholder="Пару слов о проекте"
+										></textarea>
+									</div>
+									<div class="my-3">
+										<div class="loading">Загрузка</div>
+										<div class="error-message"></div>
+										<div class="sent-message">
+											Спасибо, ваша заявка отправлена!
+										</div>
+									</div>
+									<button type="submit" class="btn btn-main">
+										Отправить заявку
+									</button>
+								</form>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+				<div
+					class="container-fluid h-80 d-flex align-items-center overflow-hidden"
+				>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="uslugi-list">
+								<div class="running-line running-line__toright">
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Таргетированная реклама</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Таргетированная реклама</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Таргетированная реклама</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="running-line running-line__toleft">
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка дизайна сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка моб. приложения</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка дизайна сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка моб. приложения</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка дизайна сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка моб. приложения</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="running-line running-line__toright">
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">SEO - продвижение</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">SEO - продвижение</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+									</div>
+									<div class="place">
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">SEO - продвижение</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Разработка сайта</h2>
+											</div>
+										</div>
+										<div class="block block--color">
+											<div>
+												<h2 class="rolling-text">Контекстная реклама</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="uslugi">
+				<div class="container">
+					<div class="row uslugi-item flex-column-reverse flex-lg-row">
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__left"
+								style="background: url(/assets/img/uslugi/uslugi-1.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>Контекстная реклама</h4>
+							</div>
+						</div>
+						<div
+							class="col-lg-7 d-flex align-items-center uslugi-line__right justify-content-end"
+						>
+							<div class=""><h2 class="gradient-to-left">Продвижение</h2></div>
+						</div>
+					</div>
+					<div class="row uslugi-item">
+						<div
+							class="col-lg-7 d-flex justify-content-center align-items-center uslugi-line__left"
+						>
+							<div class=""></div>
+						</div>
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__right"
+								style="background: url(/assets/img/uslugi/uslugi-2.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>SEO - продвижение</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row uslugi-item">
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__left"
+								style="background: url(/assets/img/uslugi/uslugi-3.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>Таргетированная реклама</h4>
+							</div>
+						</div>
+						<div
+							class="col-lg-7 d-flex justify-content-center align-items-center uslugi-line__right"
+						></div>
+					</div>
+					<div class="row uslugi-item">
+						<div
+							class="col-lg-7 d-flex justify-content-start align-items-center uslugi-line__left"
+						>
+							<div><h2 class="gradient-to-right">Дизайн</h2></div>
+						</div>
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__right"
+								style="background: url(/assets/img/uslugi/uslugi-4.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>Разработка дизайна мобильного приложения</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row uslugi-item">
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__left"
+								style="background: url(/assets/img/uslugi/uslugi-5.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>Разработка фирменного стиля компании</h4>
+							</div>
+						</div>
+						<div
+							class="col-lg-7 d-flex justify-content-center align-items-center uslugi-line__right"
+						></div>
+					</div>
+					<div class="row uslugi-item">
+						<div
+							class="col-lg-7 d-flex justify-content-center align-items-center uslugi-line__left"
+						>
+							<div class=""></div>
+						</div>
+						<div class="col-lg-5">
+							<div
+								class="uslugi-item__right"
+								style="background: url(/assets/img/uslugi/uslugi-6.JPG)"
+							>
+								<h3 class="uslugi-item__desc">
+									Реклама вашего сайта на поисковых площадках
+								</h3>
+
+								<h4>Разработка дизайна сайта</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row uslugi-item flex-column-reverse flex-lg-row"">
+					<div class="col-lg-5">
+						<div
+							class="uslugi-item__left"
+							style="background: url(/assets/img/uslugi/uslugi-7.JPG)"
+						>
+							<h3 class="uslugi-item__desc">
+								Реклама вашего сайта на поисковых площадках
+							</h3>
+
+							<h4>Разработка сайта</h4>
+						</div>
+					</div>
+					<div
+						class="col-lg-7 d-flex justify-content-end align-items-center uslugi-line__right"
+					>
+						<div><h2 class="gradient-to-left">Разработка</h2></div>
+					</div>
+				</div>
+				<div class="row uslugi-item">
+					<div class="col-lg-5 offset-lg-7">
+						<div
+							class="uslugi-item__right"
+							style="background: url(/assets/img/uslugi/uslugi-8.JPG)"
+						>
+							<h3 class="uslugi-item__desc">
+								Реклама вашего сайта на поисковых площадках
+							</h3>
+
+							<h4>Разработка мобильного приложения</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-logo text-stroke">
+								<span>I</span><span>n</span><span>c</span><span>o</span
+								><span>r</span><span>e</span>
+							</div>
+							<div class="footer-logo__desc">
+								digital-agency для ваших бизнес целей
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footer-social">
+								<ul>
+									<li>
+										<a class="invert" href="https://vk.com/incore_agency">VK</a>
+									</li>
+									<li><a class="invert" href="">Whats app</a></li>
+									<li>
+										<a class="invert" href="https://tlgg.ru/@incore_digital"
+											>Telegram</a
+										>
+									</li>
+									<li>
+										<a href="/brief.html" class="btn btn-main invert"
+											>Оставить заявку</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="footer-contacts">
+								<ul>
+									<li>
+										<a class="invert" href="mailto:production@incoreagency.ru"
+											>production@incoreagency.ru</a
+										>
+									</li>
+									<li>
+										Телефон: <a class="invert" href="">8-900-900-00-01</a>
+									</li>
+									<li>Russia, Moscow</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="copyright d-flex justify-content-between">
+							<div>2022, THE INCORE DIGITAL AGENCY - Все права защищены</div>
+							<div>
+								<a class="invert" target="_blank" href="/privacy.html"
+									>Конфиденциальность — Условия</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+
+	<script src="assets/libs/butter/butter.js"></script>
+	<script src="assets/libs/AOS/aos.js"></script>
+	<script src="assets/libs/cursor/window.curDot.min.js"></script>
+	<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</html>
