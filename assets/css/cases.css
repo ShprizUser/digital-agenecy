@@ -1,0 +1,131 @@
+.logo-lg {
+	font-size: calc(3.375rem + 4.5vw);
+}
+
+/*******************************
+ * SwiperBrands
+ *******************************/
+.swiper-slide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+}
+
+.swiperBrands .swiper-slide img {
+	width: 100%;
+	height: 100%;
+}
+
+.swiperBrands.swiper {
+	width: 100%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.brands-wrapper {
+	display: flex;
+}
+.swiperBrands .swiper-slide {
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+.swiperBrands-item {
+	width: 60%;
+	height: 600px;
+}
+.wiperBrands-item__content {
+	padding: 25px;
+	background: rgba(255, 255, 255, 0.05);
+	/* border: 1px solid rgba(255, 255, 255, 0.2); */
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.wiperBrands-item__content h3 {
+	font-weight: bold;
+}
+.wiperBrands-item__desc {
+	display: flex;
+	justify-content: space-between;
+}
+/* .swiperBrands.swiper:before {
+	content: "";
+	position: absolute;
+	top: 49%;
+	left: 0px;
+	height: 4px;
+	width: 85px;
+	background: #fff;
+	border-radius: 2px;
+} */
+/*******************************
+ * SwiperBrands-name
+ *******************************/
+.swiperBrands-name {
+	width: 100%;
+	height: 600px;
+}
+.swiperBrands-name .swiper-slide-active {
+	transform: scale(1.6);
+}
+.swiperBrands-name .swiper-slide {
+	height: 100px;
+	transition: all 0.3s ease-in-out;
+	font-weight: bold;
+}
+.swiperBrands-name .swiper-slide-prev,
+.swiperBrands-name .swiper-slide-next {
+	transform: scale(1.3);
+}
+.swiperBrands-name .swiper-slide h2 {
+	font-weight: bold;
+	opacity: 0.3;
+}
+.swiperBrands-name .swiper-slide-prev h2,
+.swiperBrands-name .swiper-slide-next h2 {
+	opacity: 0.6;
+}
+.swiperBrands-name .swiper-slide-active h2 {
+	opacity: 1;
+}
+.swiperBrands-name .swiper-slide:before {
+	content: "→";
+	position: absolute;
+	right: 91px;
+	top: calc(50% - 30px);
+	width: 40px;
+	font-size: 43px;
+	line-height: 1;
+	opacity: 0;
+}
+
+.swiperBrands-name .swiper-slide-active:before {
+	animation: animationAarrow 0.5s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animationAarrow {
+	0% {
+		opacity: 0;
+		transform: translateX(-70px);
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50px);
+	}
+}
